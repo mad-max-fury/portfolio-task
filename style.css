@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
+    width: 100vw;
+    background-color: #adadad;
+
+}
+main{
+    display: inherit;
+    flex-direction: inherit;
+    width: 65%;
+    background-color: white;
+    align-self: center;
+    margin: 2rem;
+    box-shadow: 0px 3px 4px 2px white, 1px 5px 4 px -2px gray;
+    margin-bottom: 4rem;
+    padding-bottom: 1rem;
+    
+}
+.first-Row{
+    display: inherit;
+    height: 12rem;
+    padding-top: 1rem;
+    border-bottom: 2px solid black;
+    
+}
+.first-Row  .square{
+    width: 4%;
+    margin-right: 1rem;
+    height: 3rem;
+    background-color: rgb(23, 33, 44);
+}
+#logo{
+    width: 25%;
+    outline: 0;
+    border: 0;
+    /* border: 1px solid saddlebrown; */
+   
+}
+#logo img{
+    /* background-color: red; */
+    height: 8.5rem;
+    width: 8.5rem;
+    border-radius: 4.25rem;
+    border: .4rem solid teal;
+    object-fit: cover;
+    
+}
+#qualification{
+    width: 50%;
+    padding-right: 1.1rem;
+}
+#About-Me, #link-address{
+    width: 35%;
+}
+#About-Me{
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#About-Me h1{
+    font-size: 30px;
+}
+#About-Me h4{
+    color: teal;
+}
+#link-address{
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: end;
+    padding-right: 2rem;
+}
+.second-Row{
+    display: inherit;
+    padding-top: 1rem;
+    justify-content: space-evenly;
+}#education h1{
+ margin-left: 2rem;
+ margin-bottom: .5rem;
+}
+.square{
+    width: 7%;
+    margin-right: 1rem;
+    height: 3rem;
+    background-color: teal;
+}
+div ul li{
+    margin-left: 1rem;
+    color: teal;
+}
+#skills span button{
+    margin: 5px;
+    background-color: rgb(151, 137, 137);
+    padding: 3px;
+    color: white;
+    border: 0;
+    outline:0;
+    border-radius: 2px;
+}
+#interest span button{
+    margin: 5px;
+    background-color:#fff;
+    border: 2px solid gray;
+
+    padding: 3px;
+    color: black;
+    outline:0;
+    border-radius: 2px;
+}
+#lang-float{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+#lang-float i{
+    font-size: 14px;
+}
+#program-wrapper1, #program-wrapper2, #program-wrapper3,#program-wrapper4{
+    display: flex;
+    font-size: 17px;
+    margin-bottom:1rem ;
+}
+div ul li h4{
+    color: black;
+    text-transform: lowercase;
+    font-size: 16px;
+}
+#skills{
+    margin-bottom: 1.5rem;
+}
+.person-project{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid green; */
+    height: 17rem;
+    justify-content: space-evenly;
+}
+.cert{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid green; */
+    height: 10rem;
+    justify-content: space-evenly;
+}
+@media screen and (max-width:730px) and (min-width:375px) {
+    main{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+    #logo{
+     margin-bottom: 3rem;
+     margin-top: 9rem;
+        
+    }
+
+    .square{
+        display: none;
+    }
+    #link-address{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    #link-address span{
+        display: flex;
+       
+    }
+    #link-address span i{
+        margin-left: .4rem;
+    }
+   .first-Row{
+       text-align: center;
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+       height: 50%;
+       align-items: center;
+       justify-content: space-between;
+   } 
+   .second-Row{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+   #education {
+       flex-wrap: wrap;
+       align-items: center;
+       /* border: 1px solid red; */
+       justify-content: center;
+       text-align: center;
+   }
+   #program-wrapper1, #program-wrapper2, #program-wrapper3,#program-wrapper4{
+       flex-direction: column;
+       flex-wrap: wrap;
+      
+   }
+   h4{
+    word-wrap: normal;
+   }
+   #skills{
+       margin-bottom: 4rem;
+   }
+   .person-project{
+       margin-bottom:5rem;
+   }
+   .cert,#lang{
+       margin-bottom: 2rem;
+   }
+}
