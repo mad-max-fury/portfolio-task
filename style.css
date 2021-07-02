@@ -82,6 +82,7 @@ main{
 #link-address > span{
     display:flex;
     flex-direction:row;
+    justify-content:space-between;
 }
     
 .second-Row{
