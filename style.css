@@ -79,6 +79,11 @@ main{
     text-align: end;
     padding-right: 2rem;
 }
+#link-address > span{
+    display:flex;
+    flex-direction:row;
+}
+    
 .second-Row{
     display: inherit;
     padding-top: 1rem;
